@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../lib/bootstrap-3.3.7/css/bootstrap.css">
+        <style>
+            h1 {
+                 margin: 0 auto;
+                 text-align: center;
+
+            }
+            img.img-show {
+                width: 400px;
+                height: 600px;
+                opacity: 0.8;
+                /* border-radius: 5px; */
+                /* margin: 0 auto; */
+            }
+            /*指定宽度的元素可以通过设置margin: 0 auto;来居中显示*/
+            div.img-container {
+                width: 400px;
+                height: 600px;
+                margin: 5px auto;
+                position: relative;
+            }
+            button.class-button-down {
+                float: right;
+            }
+            div.button-container {
+                margin-top: 5px;
+            }
+            div.class-dot {
+
+                width: 14px;
+                height: 14px;
+                border: 1px solid black;
+                display: inline-block;
+                border-radius: 7px;
+            }
+            div.class-dot-container {
+                /* width: 96px;
+                height: 25px;
+                margin: -15px auto; */
+                /* 下面的css用来设置水平居中 */
+                /* 设置这个div元素的position为absolute，这样就可以直接自由定位元素，使用top、right、bottom和left
+                    如果设置position的属性为absolute，一定要设置父元素的position为relative
+                    因为position属性为absolute的元素的定位是相对于最近的父元素且position为relative
+                 */
+                position: absolute;
+                bottom: 0px;
+                /* 向左偏移50% */
+                left: 50%;
+                /* 平移自身宽度的50%，-表示向右平移 */
+                transform: translateX(-50%);
+
+            }
+            .class-current-red {
+                background-color: red;
+            }
+        </style>
+        <title>轮播图</title>
+    </head>
+    <body>
+        <h1>轮播图</h1>
+        <div class="img-container">
+            <img data-img-id="1" class="img-show img-rounded" src="img/0001.jpg" alt="">
+            <div class="class-dot-container">
+                <div data-id="1" class="class-dot class-current-red"></div>
+                <div data-id="2" class="class-dot"></div>
+                <div data-id="3" class="class-dot"></div>
+                <div data-id="4" class="class-dot"></div>
+            </div>
+
+            <div class="button-container">
+                <button class="class-button-up btn btn-primary" type="button" name="button">上一张</button>
+                <button class="class-button-down btn btn-primary" type="button" name="button">下一张</button>
+            </div>
+
+        </div>
+        <script src="../lib/jquery/jquery-2.2.1.min.js"></script>
+        <script src="../lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+        <script src="controller.js"></script>
+    </body>
+
+</html>
