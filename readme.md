@@ -12,3 +12,6 @@
 3. 图片的切换间隔使用定时器（setInterval()）实现
 4. 图片的切换通过修改img元素的src属性实现
 
+效果展示
+![slideshow](https://github.com/windofme1109/slideshow/blob/master/pic/slide-show.png)
+
