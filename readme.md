@@ -17,3 +17,4 @@
 ![slideshow](https://github.com/windofme1109/slideshow/blob/master/pic/slide-show.png)
 
 ## 新建本地分支进行测试
+## 属于master分支下的开发分支
