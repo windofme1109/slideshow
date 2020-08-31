@@ -15,3 +15,5 @@
 效果展示
 
 ![slideshow](https://github.com/windofme1109/slideshow/blob/master/pic/slide-show.png)
+
+## 新建本地分支进行测试
